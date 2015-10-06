@@ -1,7 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'de.hannesstruss.godot'
 //un comment when have real lib module to upload to jitpack
-//apply plugin: 'com.github.dcendents/android-maven'
+//apply plugin: 'com.github.dcendents.android-maven'
+
 
 def libVersionCode = 1
 def libVersionName = "1.0.0.0"
@@ -109,7 +110,7 @@ dependencies {
 //              pom {
 //                project {
 //                  packaging 'aar'
-//                  name 'library desc'
+//                  name 'GWSDroidGradle'
 //                  url siteUrl
 //
 //                  licenses {
@@ -135,7 +136,7 @@ dependencies {
 //       }
 //   }
 //
-// task sourcesJar(typ: Jar){
+// task sourcesJar(type: Jar){
 //       from android.sourceSets.main.java.srcDirs
 //       classifier = 'sources'
 // }

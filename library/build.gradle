@@ -105,7 +105,7 @@ dependencies {
 
 }
 // install {
-//      repostiories.mavenInstaller{
+//      repositories.mavenInstaller{
 //              pom {
 //                project {
 //                  packaging 'aar'
@@ -127,7 +127,7 @@ dependencies {
 //                 }
 //                  scm {
 //                    connection gitUrl
-//                    developmentConnection gitUrl
+//                    developerConnection gitUrl
 //                    url siteUrl
 //                   }
 //               }
@@ -141,7 +141,7 @@ dependencies {
 // }
 // task javadoc(type: Javadoc){
 //    source = android.sourceSets.main.java.srcDirs
-//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator)
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
 // }
 // task javadocJar(type: Jar, dependsOn: javadoc){
 //    classifier = 'javadoc'

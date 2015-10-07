@@ -151,13 +151,20 @@ ext {
     butterknifeVersion = '7.0.1'
     rxandroidVersion = '1.0.1'
     rxjavaVersion = '1.0.14'
+    rxbindingVersion = '0.2.0'
 
 
     regularDependencies = [
             picasso: "com.squareup.picasso:picasso:$picassoVersion",
             butterknife: "com.jakewharton:butterknife:$butterknifeVersion",
             rxandroid: "io.reactivex:rxandroid:$rxandroidVersion",
-            rxjava:"io.reactivex:rxjava:$rxjavaVersion"
+            rxjava:"io.reactivex:rxjava:$rxjavaVersion",
+            rxbinding:"com.jakewharton.rxbinding:rxbinding:$rxbindingVersion",
+            rxbindingSupportFour:"com.jakewharton.rxbinding:rxbinding-support-v4:$rxbindingVersion",
+            rxbindingAppCompat:"com.jakewharton.rxbinding:rxbinding-appcompat-v7:$rxbindingVersion",
+            rxbindingDesign:"com.jakewharton.rxbinding:rxbinding-design:$rxbindingVersion",
+            rxbindingRecycler:"com.jakewharton.rxbinding:rxbinding-recyclerview-v7:$rxbindingVersion"
+
     ]
 
     leakCanaryVersion = '1.3.1'

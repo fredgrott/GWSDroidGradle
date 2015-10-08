@@ -152,6 +152,10 @@ ext {
     rxandroidVersion = '1.0.1'
     rxjavaVersion = '1.0.14'
     rxbindingVersion = '0.2.0'
+    rxlifecycleVersion = '0.3.0'
+    sqlbriteversion = '0.4.0'
+    reactivelocationVersion = '0.8'
+    rxpreferencesVersion = '1.0.0'
 
 
     regularDependencies = [
@@ -163,7 +167,12 @@ ext {
             rxbindingSupportFour:"com.jakewharton.rxbinding:rxbinding-support-v4:$rxbindingVersion",
             rxbindingAppCompat:"com.jakewharton.rxbinding:rxbinding-appcompat-v7:$rxbindingVersion",
             rxbindingDesign:"com.jakewharton.rxbinding:rxbinding-design:$rxbindingVersion",
-            rxbindingRecycler:"com.jakewharton.rxbinding:rxbinding-recyclerview-v7:$rxbindingVersion"
+            rxbindingRecycler:"com.jakewharton.rxbinding:rxbinding-recyclerview-v7:$rxbindingVersion",
+            rxlifecycle:"com.trello:rxlifecycle:$rxlifecycleVersion",
+            rxlifecycleComponents:"com.trello:rxlifecycle-components:$rxlifecycleVersion",
+            sqlbrite:"com.squareup.sqlbrite:sqlbrite:$sqlbriteversion",
+            reactivelocation:"pl.charmas.android:android-reactivve-location:$reactivelocationVersion@aar",
+            rxpreferences:"com.f2prateek.rx.preferences:rx-preferences:$rxpreferencesVersion"
 
     ]
 

@@ -138,7 +138,7 @@ dependencies {
     debugCompile rootProject.ext.appDependencies.leakcanaryAndroidDC
     releaseCompile rootProject.ext.appDependencies.leakcanaryAndroidNOOPRC
     compile rootProject.ext.appDependencies.timber
-    compile rootProject.ext.appDependencies.timberLint
+
     androidTestCompile rootProject.ext.instrumentedTestDependencies.espressoContrib
     androidTestCompile rootProject.ext.instrumentedTestDependencies.espressoCore
     androidTestCompile rootProject.ext.instrumentedTestDependencies.espressoRunner

@@ -11,7 +11,35 @@ Note: This repo is dynamic in that it changes over time as the development envir
 Usage
 =====
 
+I use jitpack to upload my libraries so you put this in your root buildscript:
+
+```groovy
+allprojects {
+        repositories {
+            jcenter()
+            maven { url "https://jitpack.io" }
+        }
+   }
+```
+Than in the module buildscript:
+
+```groovy
+dependencies {
+       compile 'com.github.shareme:gwsdroidinsutil:library:tag@aar'
+
+```
+The tag you will replace with the latest version number which you can find by clicking the release
+link above in the github UI to see what the latest version number is.
+
+If you want to use the SNAPSHOT, do not use in production, than if you replace the tag mentioned above
+-SNAPSHOT than you get the latest aar build directly from the master. But remember, if you use snapshots
+do not use them in production as than kittens and puppies tend to die.
+
+
+
 Obviously copy the root, library, and app build scripts and make the changes you need.
+
+
 
 Target Android API Range
 ========================

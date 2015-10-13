@@ -137,6 +137,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile rootProject.ext.tddJunitDependencies.junit
     testCompile rootProject.ext.tddJunitDependencies.mockito
+    testCompile rootProject.ext.tddJunitDependencies.assertjJunitCore
     compile rootProject.ext.androidSupportDependencies.appCompat
     debugCompile rootProject.ext.appDependencies.leakcanaryAndroidDC
     releaseCompile rootProject.ext.appDependencies.leakcanaryAndroidNOOPRC

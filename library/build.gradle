@@ -12,7 +12,6 @@ def libVersionName = "1.0.0.0"
 // def siteUrl = 'https://github.com/shareme/GWSDroidGradle'
 // def gitUrl = 'https://github.com/shareme/GWSDroidGradle.git'
 // group = "com.github.shareme.GWSDroidGradle"
-// artifact = "library"
 // version = libVersionName
 
 

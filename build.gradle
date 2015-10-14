@@ -138,19 +138,7 @@ ext {
 
     spoonClientVersion = '1.1.10'
 
-    cucumberCoreVersion = '1.2.0'
-    cucumberHtmlVersion = '0.2.3'
-    cucumberJavaVersion = '1.2.0'
-    cucumberJunitVersion = '1.2.0'
-    cucumberJvmVersion = '1.0.3'
-    cucumberPicoVersion = '1.2.0'
-    cucumberGherkinVersion = '2.12.2'
-    // to workaround loading an apklib  we append the jar classifier
-    // it will be this in the block below:
-    // cucumberAndroid:"info.cukes:cucumber-android:$cucumberAndroidVersion@jar"
-    // we probably should make a clone of the androidTest as a new build /product
-    // config that we could run both Espresso and cucumber, I think
-    cucumberAndroidVersion = '1.2.0'
+
 
 
     //Remember, test libs are usually out of synch with both support libs and
@@ -178,14 +166,8 @@ ext {
             assertjCardview:"com.squareup.assertj:assertj-android-cardview-v7:$assertjVersion",
             assertjRecyclerview:"com.squareup.assertj:assertj-android-recyclerview-v7:$assertjVersion",
             assertjPalette:"com.squareup.assertj:assertj-android-palette-v7:$assertjVersion",
-            spoonClient:"com.squareup.spoon:spoon-client:$spoonClientVersion",
-            cucumberCore:"info.cukes:cucumber-core:$cucumberCoreVersion",
-            cucumberHtml:"info.cukes:cucumber-html:$cucumberHtmlVersion",
-            cucumberJava:"info.cukes:cucumber-java:$cucumberJavaVersion",
-            cucumberJunit:"info.cukes:cucumber-junit:$cucumberJunitVersion",
-            cucumberJvm:"info.cukes:cucumber-jvm-deps:$cucumberJvmVersion",
-            cucumberPico:"info.cukes.cucumber-picocontainer:$cucumberPicoVersion",
-            cucumberGherkin:"info.cukes:gherkin:$cucumberGherkinVersion"
+            spoonClient:"com.squareup.spoon:spoon-client:$spoonClientVersion"
+
     ]
 
     picassoVersion = '2.5.2'

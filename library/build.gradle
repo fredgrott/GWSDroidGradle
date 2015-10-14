@@ -6,13 +6,19 @@ apply plugin: 'de.hannesstruss.godot'
 
 def libVersionCode = 1
 def libVersionName = "1.0.0.0"
-// if its a snapshot than version needs to be commit hash instead
-// and end user of lib wil put the suffix -SNAPSHOT or commit hash and classifier aar to get
-//lib module version number
-// version = libVersionName
+
+//okay rest of the jitpack stuff for the local maven install to work correctly
+// uncomment next lines and change where appropriate
 // def siteUrl = 'https://github.com/shareme/GWSDroidGradle'
 // def gitUrl = 'https://github.com/shareme/GWSDroidGradle.git'
-// group = "com.github.shareme"
+// group = "com.github.shareme.GWSDroidGradle"
+// artifact = "library"
+// version = libVersionName
+
+
+
+
+
 
 
 android {

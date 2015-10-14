@@ -39,7 +39,7 @@ for example
 
 so lets put that first part together
 
-           com.github.shareme:GWSDroidGradle
+           com.github.shareme.GWSDroidGradle
 
 at this point to pull the library artifact if no release has been uploaded to  github than you would add
 
@@ -47,11 +47,11 @@ at this point to pull the library artifact if no release has been uploaded to  g
 
 thus for no release yet it would be
 
-         com.github.shareme:GWSDroidGradle:-SNAPSHOT
+         com.github.shareme.GWSDroidGradle:library:-SNAPSHOT
 
 to get a library module of a gitub repo that has uploaded a release you would do something like:
 
-     com.github.shareme:GWSDroidGradle:library:1.0.0@aar
+     com.github.shareme.GWSDroidGradle:library:1.0.0@aar
 
 jitpack takes care of modifying the groupID and artifactID when it builds the github repo so that the
 generated maven pom will be right even with multiple modules as even the simplest android library might

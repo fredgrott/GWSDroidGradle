@@ -83,7 +83,7 @@ ext {
 
 
 
-    androidSupportVersion = '23.0.1'
+    androidSupportVersion = '23.1.0'
 
 
     androidSupportDependencies = [
@@ -118,15 +118,15 @@ ext {
             assertjJunitCore:"org.assertj:assertj-core:$assertJunitVersion"
     ]
 
-    espressoContribVersion = '2.2'
-    espressoCoreVersion = '2.2'
-    espressoIdlingResourceVersion = '2.2'
-    espressoIntentsVersion = '2.2'
-    espressoWebVersion = '2.2'
-    espressoRulesVersion = '0.3'
-    espressoRunnerVersion = '0.3'
+    espressoContribVersion = '2.2.1'
+    espressoCoreVersion = '2.2.1'
+    espressoIdlingResourceVersion = '2.2.1'
+    espressoIntentsVersion = '2.2.1'
+    espressoWebVersion = '2.2.1'
+    espressoRulesVersion = '0.4.1'
+    espressoRunnerVersion = '0.4.1'
     espressoTestingSupportLibVersion = '0.1'
-    espressUIAutomatorVersion = '2.1.1'
+    espressUIAutomatorVersion = '2.1.2'
     hamcrestIntegrationVersion = '1.3'
     hamcrestLibraryVersion = '1.3'
 

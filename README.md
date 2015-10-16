@@ -12,10 +12,24 @@ What is Included
 ================
 
 The Gradle build files
+
 The proguard module files
+
 The travis ci build template file
+
 The readme template
+
 the license template
+
+Edit Text workarounds:
+
+     res/values/dimens.xml
+     res/values-21/dimens.xml
+     res/values-22/dimens.xml
+
+
+
+
 
 
 Usage

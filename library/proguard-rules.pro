@@ -19,10 +19,11 @@
 # best practices in it
 -dontusemixedcaseclassnames
 -dontskipnonpubliclibraryclasses
+-dontskipnonpubliclibraryclassmembers
+-repackageclasses 'android.support.v7'
 -verbose
 # optimization is turned on
 -dontpreverify
--dontobfuscate
 # If you want to enable optimization, you should include the
 # following:
 -optimizations !code/simplification/arithmetic,!code/simplification/cast,!field/*,!class/merging/*
@@ -47,6 +48,7 @@
     public <init>(android.content.Context, android.util.AttributeSet);
     public <init>(android.content.Context, android.util.AttributeSet, int);
     public void set*(...);
+    public void get*(...);
 }
 -keepclasseswithmembers class * {
     public <init>(android.content.Context, android.util.AttributeSet);
@@ -113,6 +115,17 @@
 -dontwarn com.sothree.slidinguppanel.**
 -dontwarn sun.misc.Unsafe
 -dontwarn com.google.common.util.concurrent.RateLimiter
+-dontwarn javax.annotation.**
 
 -keep class android.support.v8.renderscript.** { *; }
 -keep public class * extends android.app,backup.BackupAgent
+-keep class android.support.v4.app.** { *; }
+-keep interface android.support.v4.app.** { *; }
+
+-keep class !android.support.v7.internal.view.menu.*MenuBuilder*,android.support.v7.** { *; }
+-keep interface android.support.v7.app.** { *; }
+
+-keep class android.support.v13.app.** { *; }
+-keep interface android.support.v13.app.** { *; }
+-keep class android.support.design.widget.** { *; }
+-keep interface android.support.design.widget.** { *; }

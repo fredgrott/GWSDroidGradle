@@ -8,6 +8,16 @@ to modify them if you use product flavors.
 Note: This repo is dynamic in that it changes over time as the development environment changes. And
       it will not hurt if some android developers were to read up on gradle.
 
+What is Included
+================
+
+The Gradle build files
+The proguard module files
+The travis ci build template file
+The readme template
+the license template
+
+
 Usage
 =====
 

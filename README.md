@@ -136,9 +136,10 @@ Than we have the maven install task and its related tasks to generate a javadoc 
 Implementation Summary
 ----------------------
 
-We set the build up to use instrumented and function testing on both the app module and library module
-and set the library module to be deployable to jitpack. What is not shown yet is that we use monkeyrunner
-with a jython set-up to act as are UIAutomator as UIAutomator cannot be run until 18 and higher apis.
+We set the build up to use instrumented with espresso and function testing with mockito mocking on
+both the app module and library module and set the library module to be deployable to jitpack.
+What is not shown yet is that we use monkeyrunner with a jython set-up to act as are UIAutomator
+as UIAutomator cannot be run until 18 and higher apis.
 
 At sometime later this block will contain a reference to the other gradle set-up I use which sets the
 app module to use retro-lambda and lombok as I do not use those for the libraries that I create as its

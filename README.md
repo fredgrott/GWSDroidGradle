@@ -1,6 +1,7 @@
 GWSDroidGradle
 ==============
 
+
 My set of gradle build scripts for Android Native java Application Development. These build scripts
 specifically do not use product flavors. thus, if you copy them keep that in mind as you might have
 to modify them if you use product flavors.
@@ -17,7 +18,7 @@ Root Build Script Implementation
 
 classpath dependency in build script is first set to the version of the android tools plugin which is
 kept in-line with the stable version of the plugin rather than living on the edge with the beta-version
-as the stable version api i snot changing and thus results in a stable build system that is very dependable.
+as the stable version api is not changing and thus results in a stable build system that is very dependable.
 
 So now let me describe the gradle plugin dependencies that are set up in classpath and why I sue these
 gradle plugins.

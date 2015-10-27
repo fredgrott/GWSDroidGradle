@@ -27,3 +27,4 @@
     @butterknife.* <methods>;
 }
 -dontwarn timber.**
+-dontwarn com.squareup.okhttp.**

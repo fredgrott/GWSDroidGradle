@@ -210,6 +210,7 @@ Credits
 ========
 
 Fred Grott(aka shareme  GrottWorkShop)
+[MyGithubProfile](https://github.com/shareme/MyGithubProfile)
 
 Former JavaME and JavaEE developer that made the transition to Android Native java Application Development.
 Multi-computer-language polyglot that can jump into anything and I do not play follow-the-leader but

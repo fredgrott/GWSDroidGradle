@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 apply plugin: 'de.hannesstruss.godot'
 //un comment when have real lib module to upload to jitpack
-//apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.github.dcendents.android-maven'
 
 
 def libVersionCode = 1
@@ -9,10 +9,10 @@ def libVersionName = "1.0.0.0"
 
 //okay rest of the jitpack stuff for the local maven install to work correctly
 // uncomment next lines and change where appropriate
-// def siteUrl = 'https://github.com/shareme/GWSDroidGradle'
-// def gitUrl = 'https://github.com/shareme/GWSDroidGradle.git'
-// group = "com.github.shareme"
-// version = libVersionName
+def siteUrl = 'https://github.com/shareme/GWSDroidGradle'
+def gitUrl = 'https://github.com/shareme/GWSDroidGradle.git'
+group = "com.github.shareme"
+version = libVersionName
 
 
 
@@ -107,50 +107,50 @@ dependencies {
     compile rootProject.ext.appDependencies.timber
 
 }
-// install {
-//      repositories.mavenInstaller{
-//              pom {
-//                project {
-//                  packaging 'aar'
-//                  name 'GWSDroidGradle'
-//                  url siteUrl
-//
-//                  licenses {
-//                     license{
-//                          name 'The Apache Software License, Version 2.0'
-//                          url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-//                      }
-//                  }
-//                 developers {
-//                   developer {
-//                     id 'shareme'
-//                     name 'Fred Grott'
-//                     email 'fred.grott@gmail.com'
-//                   }
-//                 }
-//                  scm {
-//                    connection gitUrl
-//                    developerConnection gitUrl
-//                    url siteUrl
-//                   }
-//               }
-//          }
-//       }
-//   }
-//
-// task sourcesJar(type: Jar){
-//       from android.sourceSets.main.java.srcDirs
-//       classifier = 'sources'
-// }
-// task javadoc(type: Javadoc){
-//    source = android.sourceSets.main.java.srcDirs
-//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-// }
-// task javadocJar(type: Jar, dependsOn: javadoc){
-//    classifier = 'javadoc'
-//    from javadoc.destinationDir
-// }
-// artifacts {
-//     archives javadocJar
-//     archives sourcesJar
-//}
+install {
+      repositories.mavenInstaller{
+              pom {
+                project {
+                  packaging 'aar'
+                  name 'GWSDroidGradle'
+                  url siteUrl
+
+                  licenses {
+                     license{
+                          name 'The Apache Software License, Version 2.0'
+                          url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                      }
+                  }
+                 developers {
+                   developer {
+                     id 'shareme'
+                     name 'Fred Grott'
+                     email 'fred.grott@gmail.com'
+                   }
+                 }
+                  scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+                   }
+               }
+          }
+       }
+   }
+
+task sourcesJar(type: Jar){
+       from android.sourceSets.main.java.srcDirs
+       classifier = 'sources'
+}
+task javadoc(type: Javadoc){
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+task javadocJar(type: Jar, dependsOn: javadoc){
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+artifacts {
+     archives javadocJar
+     archives sourcesJar
+}

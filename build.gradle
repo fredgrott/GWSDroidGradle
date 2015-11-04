@@ -85,7 +85,7 @@ ext {
     //def globalConfiguration = rootProject.extensions.getByName("ext")
     //than globalConfiguration.getAt("androidCompileSdkVersion")
     androidCompileSdkVersion = 23
-    androidBuildToolsVersion = '23.0.1'
+    androidBuildToolsVersion = '23.0.2'
 
     androidMinSdkVersion = 16
     androidTargetSdkVersion = 23
@@ -218,6 +218,14 @@ ext {
             sqlbrite:"com.squareup.sqlbrite:sqlbrite:$sqlbriteversion",
             reactivelocation:"pl.charmas.android:android-reactivve-location:$reactivelocationVersion@aar",
             rxpreferences:"com.f2prateek.rx.preferences:rx-preferences:$rxpreferencesVersion"
+
+    ]
+
+    // inspects database on device or emulator without rooting device
+    dbinspectorVersion = '3.2.1'
+
+    debugAppDependencies = [
+            debinspector: "im.dino:dbinspector:$dbinspectorVersion@aar"
 
     ]
 

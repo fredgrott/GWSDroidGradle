@@ -16,7 +16,7 @@ buildscript {
         classpath 'com.stanfy.spoon:spoon-gradle-plugin:1.0.3'
         // in app modules
         // apply plugin: 'com.neenbedankt.android-apt'
-        // need version 1.6 once butterknife is to 7.0.2 stable
+        // need version 1.8 once butterknife is to 8.0.2 stable
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.6'
         //classpath 'com.genymotion:plugin:1.0'
         classpath 'org.moallemi.gradle.advanced-build-version:gradle-plugin:1.5.0'
@@ -242,7 +242,7 @@ ext {
 
     ]
 
-    playServicesVersion = '8.1.0'
+    playServicesVersion = '8.3.0'
 
     playServicesDependencies = [
             playServices: "com.google.android.gms:play-services:$playServicesVersion",

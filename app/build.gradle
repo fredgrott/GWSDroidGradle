@@ -6,6 +6,7 @@ apply plugin: 'org.moallemi.advanced-build-version'
 apply plugin: 'view-inspector'
 
 
+
 advancedVersioning {
     nameOptions {
         versionMajor 1
@@ -160,6 +161,8 @@ dependencies {
     compile project(":library")
 
 }
+
+
 //uncomment to enable
 // androidTest gets a class named SystemAnimations and animations disabled and enabled within
 // the ApplicationTest setUp and tearDown

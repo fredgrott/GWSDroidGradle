@@ -140,6 +140,26 @@ ext {
             databingingLibrary: "com.android.databindging:library:$databindingVersion"
     ]
 
+    daggerVersion = '2.0.2'
+    daggerProducersVersion = '2.0-beta'
+    javaxinjectVersion = '1'
+    javaxannotationVersion = '1.0'
+
+
+    daggerDependencies = [
+            //apt
+            dagger:"com.google.dagger:dagger:$daggerVersion",
+            //compile
+            daggerCompiler:"com.google.dagger:dagger-compiler:$daggerVersion",
+            //apt
+            daggerProducers:"com.google.dagger:dagger-producers:$daggerProducersVersion",
+            //compile
+            javaxInject:"javax.inject:javax.inject:$javaxinjectVersion",
+            //provided
+            javaxAnnotation:"javax.annotation:jsr250-api:$javaxannotationVersion"
+    ]
+
+
 
     espressoContribVersion = '2.2.1'
     espressoCoreVersion = '2.2.1'

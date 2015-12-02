@@ -128,7 +128,7 @@ ext {
             assertjJunitCore:"org.assertj:assertj-core:$assertJunitVersion"
     ]
 
-    databindingVersion = '1.0-rc3'
+    databindingVersion = '1.0-rc5'
 
     // warning: library pulls baseLibrary but baseLibrary, compiler, dataBinder  is not in
     // m2repository as of yet and

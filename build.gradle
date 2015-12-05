@@ -137,7 +137,7 @@ ext {
     // annotations in the module build scripts
     databindingDependencies = [
             databindingAdapters: "com.android.databinding:adapters:$databindingVersion",
-            databingingLibrary: "com.android.databindging:library:$databindingVersion"
+            databindingLibrary: "com.android.databinding:library:$databindingVersion"
     ]
 
     daggerVersion = '2.0.2'
